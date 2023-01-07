@@ -1,0 +1,33 @@
+.card {
+  min-width: 200px;
+  height: auto;
+  &.default {
+    background: var(--white);
+    box-shadow: 0px 4px 10px var(--primary-boxshadow);
+    border-radius: 24px;
+  }
+  &.saved {
+    position: relative;
+    background: var(--dark);
+    box-shadow: none;
+    border-radius: 8px;
+    min-height: 280px;
+    .saved-card-svg {
+        position: absolute;
+        top: 60px;
+        right: 0;
+    }
+  }
+  &.complete {
+    position: relative;
+    background: var(--primary);
+    box-shadow: none;
+    border-radius: 8px;
+    min-height: 280px;
+    .complete-card-svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+  }
+}

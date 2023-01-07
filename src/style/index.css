@@ -1,0 +1,59 @@
+@font-face {
+  font-family: TerminaBlack;
+  src: url('./fonts/Termina-Black.otf') format('opentype');
+}
+@font-face {
+  font-family: TerminaBold;
+  src: url('./fonts/Termina-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: TerminaDemi;
+  src: url('./fonts/Termina-Demi.otf') format('opentype');
+}
+@font-face {
+  font-family: TerminaExtraLight;
+  src: url('./fonts/Termina-ExtraLight.otf') format('opentype');
+}
+@font-face {
+  font-family: TerminaHeavy;
+  src: url('./fonts/Termina-Heavy.otf') format('opentype');
+}
+@font-face {
+  font-family: TerminaLight;
+  src: url('./fonts/Termina-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: TerminaMedium;
+  src: url('./fonts/Termina-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: TerminaRegular;
+  src: url('./fonts/Termina-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: TerminaThin;
+  src: url('./fonts/Termina-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: MontserratMedium;
+  src: url('./fonts/Montserrat-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: GilroyRegular;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: TerminaRegular;
+}

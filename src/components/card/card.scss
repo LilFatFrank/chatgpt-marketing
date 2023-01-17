@@ -6,6 +6,11 @@
     box-shadow: 0px 4px 10px var(--primary-boxshadow);
     border-radius: 24px;
   }
+  &.secondary {
+    background: var(--create-card-background);
+    box-shadow: 0px 4px 20px var(--secondary-boxshador);
+    border-radius: 24px;
+  }
   &.saved {
     position: relative;
     background: var(--dark);

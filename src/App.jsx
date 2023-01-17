@@ -1,13 +1,13 @@
 import { BrowserRouter, Routes as Switch, Route } from 'react-router-dom'
+import Routes from './routes'
 import './style/app.scss'
-import Wrapper from './wrapper'
 
 const App = () => {
   return (
     <div className="app">
       <BrowserRouter>
         <Switch>
-          <Route path="/*" element={<Wrapper />} />
+          <Route path="/*" element={<Routes />} />
         </Switch>
       </BrowserRouter>
     </div>

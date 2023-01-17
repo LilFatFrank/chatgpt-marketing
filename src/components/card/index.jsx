@@ -1,11 +1,11 @@
 import { Sprite } from '..'
 import './card.scss'
 
-const Card = ({ children, type }) => {
+const Card = ({ children, type, className }) => {
   switch (type) {
     case 'complete':
       return (
-        <div className="card complete">
+        <div className={`card complete ${className || ''}`}>
           <Sprite
             className={'complete-card-svg'}
             id="complete-card-background-icon"
@@ -17,7 +17,7 @@ const Card = ({ children, type }) => {
       )
     case 'saved':
       return (
-        <div className="card saved">
+        <div className={`card saved ${className || ''}`}>
           <Sprite
             className={'saved-card-svg'}
             id="saved-card-background-icon"
@@ -27,8 +27,10 @@ const Card = ({ children, type }) => {
           {children}
         </div>
       )
+    case 'secondary':
+      return <div className={`card secondary ${className || ''}`}>{children}</div>
     default:
-      return <div className="card default">{children}</div>
+      return <div className={`card default ${className || ''}`}>{children}</div>
   }
 }
 

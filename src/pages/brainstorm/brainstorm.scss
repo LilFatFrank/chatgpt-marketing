@@ -1,0 +1,90 @@
+.brainstorm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .chat-box {
+    padding: 40px 18px 16px 24px;
+    height: 600px;
+    position: relative;
+    overflow-y: auto;
+    scrollbar-width: none;
+    .chat-text {
+      font-family: TerminaDemi;
+      font-size: 16px;
+      line-height: 20px;
+      color: var(--dark);
+      margin-bottom: 16px;
+    }
+    .chat-area {
+      height: -webkit-fill-available;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .user-message,
+      .response-message {
+        font-family: MontserratMedium;
+        font-size: 14px;
+        line-height: 18px;
+        color: var(--light);
+        border-radius: 20px;
+        padding: 16px;
+        max-width: 80%;
+        line-break: strict;
+      }
+      .user-message {
+        background: var(--primary);
+        align-self: flex-end;
+      }
+      .response-message {
+        align-self: flex-start;
+        background: var(--secondary);
+      }
+    }
+    .prompts {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: sticky;
+      top: 0;
+      bottom: 0;
+      white-space: nowrap;
+      flex-wrap: wrap;
+      gap: 10px;
+      .prompt {
+        background: var(--prompt-background);
+        font-size: 16px;
+        line-height: 20px;
+        color: var(--dark);
+        padding: 16px;
+        border-radius: 200px;
+        cursor: pointer;
+      }
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .chat-type {
+    padding: 30px 24px;
+    position: relative;
+    .input {
+      font-family: MontserratMedium;
+      font-size: 16px;
+      line-height: 20px;
+      width: 100%;
+      border: none;
+      padding-right: 100px;
+      outline: none;
+    }
+    .send {
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+}

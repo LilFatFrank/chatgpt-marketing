@@ -1,12 +1,16 @@
 :root {
-    --background: #fafafa;
-    --dark: #3d3d3d;
-    --light: #fafafa;
-    --white: #ffffff;
-    --black: #000000;
-    --primary: #00d64f;
-    --secondary: #8f95b2;
-    --error: #ff707e;
-    --off-white: #f6f6f6;
-    --primary-boxshadow: rgba(100, 249, 133, 0.4);
+  --background: #fafafa;
+  --dark: #3d3d3d;
+  --light: #fafafa;
+  --white: #ffffff;
+  --black: #000000;
+  --primary: #00d64f;
+  --secondary: #8f95b2;
+  --error: #ff707e;
+  --off-white: #f6f6f6;
+  --primary-boxshadow: rgba(100, 249, 133, 0.4);
+  --secondary-boxshador: rgba(143, 149, 178, 0.2);
+  --secondary-input-border: rgba(143, 149, 178, 0.4);
+  --prompt-background: #c3ffe6;
+  --create-card-background: #f9f9f9;
 }
